@@ -1,0 +1,83 @@
+<a [routerLink]="['/listings']"><i class="fa fa-chevron-left"></i>Back</a>
+<br/>
+
+<form (submit)="onAddSubmit()" class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Event Title</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="title" name="title" placeholder="Type event title" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Event Description</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" [(ngModel)]="description" name="description" placeholder="Type description of event" required></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Date</label>
+    <div class="col-sm-10">
+      <input type="datetime" class="form-control"  [(ngModel)]="date" name="date" placeholder="Choose date" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">City</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"  [(ngModel)]="city" name="city" placeholder="City"required>
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label">State</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"  [(ngModel)]="state" name="state" placeholder="State">
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"  [(ngModel)]="address" name="address"placeholder="123 Main Street"required>
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Venue</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"  [(ngModel)]="venue"  name="venue" placeholder="Regal Theater" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Admission</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"  [(ngModel)]="admission" name="admission" placeholder="Type your price" required>
+    </div>
+  </div>
+
+    <div class="form-group">
+    <label class="col-sm-2 control-label">Your Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"  [(ngModel)]="author" name="author" placeholder="Type your name" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Event Type</label>
+      <div class="col-sm-10">
+        <select class="form-control" type="text" [(ngModel)]="type" name="type" required>
+        <option value="Music">World Music</option>
+        <option value ="Film">Foreign Film</option>
+        <option value="Festival">Ethnic Festival</option>
+        <option value ="Food">Ethnic Dining</option>
+      </select>
+      </div>
+  </div>
+  <div class="form-group">
+     <label class="col-sm-2 control-label">Event Image </label>
+      <input id="image" [(ngModel)]="image" name="image" type="file">
+    </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>

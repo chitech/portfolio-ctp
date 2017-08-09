@@ -1,0 +1,28 @@
+<div *ngIf="listing">
+<a [routerLink] ="['/listings']"><i class="fa fa-chevron-left"></i>Back</a>
+<br />
+
+<h2 class="page-header">{{listing.title}}<small>{{listing.city}}</small></h2>
+<div class="row">
+  <div class="col-md-4">
+    <!--Image of Event -->
+    <img style="width:100%" class="thumbnail" src="{{imageUrl}}">
+  </div>
+  <div class="col-md-8">
+    <p>{{listing.description}}</p>
+    <ul class="list-group">
+      <li class="list-group-item">Event Date: {{listing.date}} </li>
+      <li class="list-group-item">Admission:{{listing.admission}}</li>
+       <li class="list-group-item">Location:{{listing.venue}}</li>       
+       <li class="list-group-item">Address:{{listing.address}}</li>
+
+
+
+       <li class="list-group-item">Submitted By:{{listing.author}}</li>
+    </ul>  
+  </div>
+  <a class="btn btn-primary" [routerLink]="['edit-listing/'+listing.$key]">Edit Event</a>
+  <a (click) = "onDeleteClick()" class="btn btn-danger" [routerLink]="['delete-listing/'+listing.$key]">Delete Event</a>
+
+</div>
+</div>

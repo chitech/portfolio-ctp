@@ -1,0 +1,8 @@
+<div class="container row chat">
+  <input type="text" id="message" *ngIf="name" placeholder="Start Chatting here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal"/>
+    <div class = "chat-container" *ngFor="let item of items | async">
+      <a href="#"> {{item.name}}</a>
+      <p>{{item.message}}</p>
+    </div>
+
+  </div>

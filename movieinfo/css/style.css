@@ -1,0 +1,18 @@
+/* Movie Info Styles by Christine Brown */
+
+	#movies img, #movie img{
+		width:100%;
+	}
+
+	/* Set Media Query for images */
+	@media(min-width:960px) {
+	#movies .col-md-3 .well {
+		height:320px;
+	}
+
+	#movies .col-md-3 img {
+		height: 200px;
+	}
+}
+
+

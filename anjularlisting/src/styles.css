@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+/** Chat Style **/
+.chat {
+    background: #333;
+    padding-top: 5em;
+}
+input#message {
+    background:none;
+    border:none;
+    border-bottom: 1px solid #c3ff33;
+    outline:none;
+    box-shadow: none;
+    color:white;
+    font-size:1.6em;
+    font-weight:300;
+    margin-bottom:3em;
+    padding: 1.2em;
+}
+
+.chat-container {
+    display:block;
+    width:100%;
+}
+.chat-container:nth-child(4){
+    opacity:.8;
+}
+.chat-container:nth-child(3) {
+    opacity: 6;
+}
+.chat-container:nth-child(2) {
+    opacity: .4;
+}
+.chat-container a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#ffcc33;
+    font-size: .8em;
+    letter-spacing: 2px;
+}
+
+.chat-container p {
+    background:#332335;
+    padding: 1.1em;
+    color: white;
+    margin: 5px 0 10px 0;
+}
+
+
+
+/** Header Navigation **/
+.navbar{
+  padding:10px;
+  margin:0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome Movie Database Demo</title>
+		<link rel ="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css">
+		<link rel = "stylesheet" href="css/style.css">
+		<script type="text/javascript">
+
+		</script>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+      		<div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">CTP Movie Info Database Demo</a>
+	        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		         
+		        </div><!--/.navbar-collapse -->
+      		</div>
+    	</nav>
+    <!--Begin Jumbotron Search -->
+    <div class="container">
+    
+    	<h3 class="text-center">Search for any Movie</h3>
+    
+    	<form id="searchForm">
+    		<input type="text" class="form-control" id = "searchText" placeholder = "Type any movie keyword then press enter"/>
+    	</form>
+    </div>
+    <div class="container">
+    	<div id="movies" class="row">
+    	</div>
+    </div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js">
+	</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src ="js/main.js"></script>
+
+
+
+		
+	</body>
+
+</html>
